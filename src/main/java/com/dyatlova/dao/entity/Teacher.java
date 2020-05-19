@@ -4,21 +4,16 @@ import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Data
 @Entity
 @Table(name = "teachers")
-public class Teacher {
-
-    @Id
-    @Column(name = "id")
-    private int id;
+public class Teacher extends BaseEntity {
 
     @Column(name = "name")
-    private String name;
+    private String nameTeacher;
 
-    @Column (name = "subject")
+    @Column(name = "subject_id")
     private int subject;
 }

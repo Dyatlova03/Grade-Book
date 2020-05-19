@@ -2,22 +2,27 @@ package com.dyatlova.dao.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "record")
 @Data
-public class Record {
-    @Id
-    @Column(name = "id")
-    private int id;
+public class Record extends BaseEntity {
 
-    @Column(name = "subject")
-    private int subject;
-
-    @Column(name = "grade")
+    @Column
     private int grade;
+
+    @OneToOne
+    @JoinColumn(name = "student_id")
+    private Student student;
+
+    @ManyToMany
+    @JoinTable(name = "subject_record",
+            joinColumns = @JoinColumn(name = "record_id"),
+            inverseJoinColumns = @JoinColumn(name = "subject_id"))
+    private List<Subject> subjects;
+
+    @Column(name = "teacher_id")
+    private int teacher;
 }

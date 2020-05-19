@@ -2,19 +2,15 @@ package com.dyatlova.dao.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "group")
 @Data
-public class Group {
-    @Id
-    @Column(name = "id")
-    private int id;
+public class Group extends BaseEntity {
 
-    @Column(name = "name")
-    private String studentName;
+
+    @OneToMany(mappedBy = "group")
+    private List<Student> students;
 }
