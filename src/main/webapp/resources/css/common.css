@@ -1,0 +1,35 @@
+body {
+    font-family: Tahoma;
+    background-color: #9d9d9d;
+    margin: 0rem;
+}
+
+h1 {
+    width: 450px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+}
+
+.group {
+    margin: 10px;
+    padding: 5px;
+}
+
+label {
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+input {
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border: #66afe9;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: #204d74;
+}
+input:focus{
+    border: #31b0d5;
+}

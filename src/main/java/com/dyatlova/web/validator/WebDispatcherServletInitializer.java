@@ -1,4 +1,4 @@
-package com.dyatlova;
+package com.dyatlova.web.validator;
 
 import com.dyatlova.service.config.ServiceConfig;
 import com.dyatlova.service.config.SpringConfig;

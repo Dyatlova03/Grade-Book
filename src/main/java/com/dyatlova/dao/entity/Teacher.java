@@ -2,9 +2,7 @@ package com.dyatlova.dao.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -14,6 +12,7 @@ public class Teacher extends BaseEntity {
     @Column(name = "name")
     private String nameTeacher;
 
-    @Column(name = "subject_id")
-    private int subject;
+    @ManyToOne
+    @JoinColumn(name = "subject_id")
+    private Subject subject;
 }
