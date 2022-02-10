@@ -38,7 +38,7 @@
     <maven.compiler.target>1.7</maven.compiler.target>
     <junit.version>4.11</junit.version>
     <postgresql.version>42.2.12</postgresql.version>
-    <hibernate-core.version>5.4.16.Final</hibernate-core.version>
+    <hibernate-core.version>5.4.24.Final</hibernate-core.version>
   </properties>
 
   <dependencies>
