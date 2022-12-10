@@ -23,7 +23,7 @@
 
   <properties>
 
-    <spring.version>5.2.5.RELEASE</spring.version>
+    <spring.version>6.0.0</spring.version>
     <spring-security-core>5.3.2.RELEASE</spring-security-core>
     <spring-data-jpa>2.3.0.RELEASE</spring-data-jpa>
     <aspectj.version>RELEASE</aspectj.version>
